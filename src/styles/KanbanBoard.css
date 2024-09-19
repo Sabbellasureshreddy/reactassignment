@@ -1,0 +1,71 @@
+/* src/styles/KanbanBoard.css */
+
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+  }
+  
+  .controls button:hover {
+    background-color: #4fa3c0;
+  }
+  
+  .controls button:active {
+    transform: scale(0.98);
+  }
+  
+  .kanban-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .kanban-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 auto; /* Adjust the width as needed */
+  }
+  
+  .kanban-column h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #61dafb;
+    padding-bottom: 10px;
+  }
+  
+  .ticket-card {
+    display: inline-block;
+    margin: 5px;
+  }
+  
